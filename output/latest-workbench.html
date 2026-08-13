@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>内容工作台</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #667085;
+      --line: #d8e0ef;
+      --paper: #ffffff;
+      --wash: #f3f7fb;
+      --accent: #0f6b5f;
+      --accent-soft: #e3f3ef;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(135deg, rgba(15, 107, 95, 0.10), transparent 34%),
+        linear-gradient(315deg, rgba(37, 99, 235, 0.08), transparent 40%),
+        var(--wash);
+      font-family: "Avenir Next", "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.72;
+    }
+    main {
+      width: min(980px, calc(100vw - 32px));
+      margin: 32px auto;
+      padding: 34px;
+      background: var(--paper);
+      border: 1px solid rgba(216, 224, 239, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 22px 70px rgba(23, 32, 51, 0.10);
+    }
+    .meta {
+      margin-bottom: 24px;
+      padding: 12px 14px;
+      color: var(--muted);
+      background: var(--accent-soft);
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    h1, h2, h3 { line-height: 1.25; }
+    h1 { margin: 0 0 18px; font-size: clamp(30px, 5vw, 46px); }
+    h2 { margin-top: 42px; padding-bottom: 10px; border-bottom: 2px solid var(--line); }
+    h3 { margin-top: 28px; }
+    a { color: var(--accent); font-weight: 700; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { padding-left: 1.35rem; }
+    li { margin: 6px 0; }
+    code {
+      padding: 2px 5px;
+      background: #edf2f7;
+      border-radius: 5px;
+    }
+    pre {
+      overflow: auto;
+      padding: 16px;
+      background: #101828;
+      color: #f8fafc;
+      border-radius: 8px;
+    }
+    pre code { padding: 0; background: transparent; color: inherit; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    th, td {
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #eef6f4; }
+    .label-en { font-size: 0.78em; color: var(--muted); font-weight: 400; }
+    @media (max-width: 640px) {
+      main { margin: 0; width: 100%; min-height: 100vh; padding: 22px; border-radius: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="meta">内容运营 Agent · 内容工作台<br>作者：靳思嘉</div>
+    <h1 id="-2026-08-13">内容工作台 - 2026-08-13</h1>
+<ul>
+<li>候选总数：20</li>
+<li>人工选中数：3</li>
+<li>生成条数：6</li>
+<li>确认通过数：5</li>
+<li>丢弃数：1</li>
+</ul>
+<h2 id="1-facebook">1. 广告拦截器遇上平台反制：用户还能怎样减少 Facebook 信息流广告</h2>
+<ul>
+<li>选题角度 <span class="label-en">topic</span>：广告拦截器遇上平台反制：用户还能怎样减少 Facebook 信息流广告</li>
+<li>传播抓手 <span class="label-en">why_hot</span>：争议：用户隐私、平台商业模式和广告拦截之间存在明确冲突，几乎人人都能代入</li>
+<li>传播潜力 <span class="label-en">spread_score</span>：84</li>
+<li>目标读者 <span class="label-en">target_audience</span>：经常使用 Facebook、重视隐私并希望减少精准广告的海外互联网用户</li>
+<li>风险提示 <span class="label-en">risk_note</span>：涉及企业负面及第三方工具有效性，相关说法需核实来源和适用范围</li>
+<li>适配平台 <span class="label-en">suitable_platforms</span>：小红书、公众号 / 本次通过：小红书、公众号</li>
+<li>原始来源 <span class="label-en">source_urls</span>：<a href="https://digitalescapetools.com/2026/08/ublock-origin-stops-chasing-facebook-ads.html" target="_blank">打开原文</a></li>
+</ul>
+<h3 id="_1">小红书</h3>
+<p><strong>标题：</strong> Facebook广告拦截失灵了？🛡️</p>
+<p><strong>正文：</strong></p>
+<p>我最近发现，Facebook信息流里的广告，真的越来越难躲。</p>
+<p>装了uBlock Origin，也不代表每条推广内容都会消失。原因很现实：广告拦截器和平台一直在“追逐”，而Facebook的信息流广告又和普通内容混在一起。</p>
+<p>这不是单纯的技术问题。
+一边是用户想少被追踪、少看精准广告；另一边是平台靠广告维持商业模式。</p>
+<p>所以我现在不再只押注一个拦截器：看到不想要的广告就主动隐藏，检查广告偏好，浏览器端再配合拦截工具。目标不是让广告彻底归零，而是尽量减少被精准推送。</p>
+<p>你在Facebook上还会用广告拦截器吗？</p>
+<h3 id="_2">公众号</h3>
+<p><strong>标题：</strong> 广告拦截器，为何越来越难挡住Facebook广告？</p>
+<p><strong>正文：</strong></p>
+<p>你打开Facebook，刷到一条看起来像普通帖子的内容：图片、文案、互动方式都很自然。再仔细看，才发现它其实是一条广告。于是你想起浏览器里的uBlock Origin，疑惑也随之出现：既然已经安装了拦截工具，为什么广告还在？</p>
+<p>这正是“广告拦截器遇上平台反制”最让人无力的地方。问题不只是某个过滤规则有没有更新，而是用户、拦截工具和平台之间，存在一场持续变化的博弈。</p>
+<p>一、广告拦截不是一键清空</p>
+<p>原始来源文章把讨论重点放在一个现实上：uBlock Origin不再一味追逐Facebook广告。这里的“停止追逐”，并不等于拦截工具完全失效，也不等于Facebook的每一条信息流广告都无法处理。它更像是一种边界判断：当广告越来越深地嵌入信息流，单靠不断增加规则，未必能稳定解决问题。</p>
+<p>对用户来说，最容易产生的误解是：安装了拦截器，就应该看不到广告。实际上，拦截器能处理的是浏览器端可识别、可过滤的内容；而平台如何组织信息流、如何把推广内容放进用户看到的页面，是平台自己的控制范围。</p>
+<p>二、真正的冲突不只在广告</p>
+<p>Facebook广告争议之所以容易引发共鸣，是因为它同时牵涉三件事：隐私、商业模式和用户体验。</p>
+<p>用户希望减少精准广告，往往不只是因为讨厌页面变拥挤，也因为不希望自己的浏览和互动被持续用于广告投放。平台则需要广告收入来支撑服务，并希望让广告尽可能出现在合适的人面前。广告拦截器站在用户一侧，试图减少追踪或隐藏广告；平台则会调整展示方式，让广告继续融入内容环境。</p>
+<p>这三者之间没有一个简单按钮可以同时满足。用户越依赖平台，越容易接受平台设定的信息流规则；越重视隐私，就越需要面对部分功能和体验上的取舍。</p>
+<p>三、减少广告，别只盯着拦截器</p>
+<p>如果目标是“尽量少看到精准广告”，我会把做法拆成几层，而不是期待某一个工具解决全部问题。</p>
+<p>第一，看到明显不想要的广告，直接使用平台提供的隐藏或反馈入口。它未必能让广告消失，但至少能把你的偏好明确表达出来。</p>
+<p>第二，检查账户中的广告偏好和隐私相关设置，减少自己不愿意接受的个性化选项。操作前先看清楚每项设置的说明，不要把“减少精准广告”误解成“完全没有广告”。</p>
+<p>第三，继续使用浏览器端的隐私工具，但把它当作辅助，而不是永久有效的承诺。面对平台页面结构的变化，过滤效果可能变化；工具能做什么，也取决于页面当时如何呈现内容。</p>
+<p>四、一个更现实的判断标准</p>
+<p>与其追问“为什么还有广告”，不如问三个问题：这些广告是否还能被隐藏？自己的广告偏好是否已经检查过？是否愿意为了减少精准推送，接受部分内容推荐体验的变化？</p>
+<p>我的建议是，今天就花几分钟做一次设置检查：先记录当前看到的广告类型，再逐条隐藏明显不相关或不想看的内容，同时查看账户里的广告偏好。之后保留浏览器隐私工具，但每隔一段时间重新确认效果。这样做不能保证信息流完全没有广告，却能把主动权从“被动刷到”拉回到“我决定接受什么”。</p>
+<h2 id="2-deepseek">2. DeepSeek 新模型与主流大模型相比，普通用户最该测试哪些能力</h2>
+<ul>
+<li>选题角度 <span class="label-en">topic</span>：DeepSeek 新模型与主流大模型相比，普通用户最该测试哪些能力</li>
+<li>传播抓手 <span class="label-en">why_hot</span>：争议：模型排名、推理能力和实际体验容易引发不同阵营用户的对比与争论</li>
+<li>传播潜力 <span class="label-en">spread_score</span>：83</li>
+<li>目标读者 <span class="label-en">target_audience</span>：经常使用国产大模型处理写作、编程和办公任务的知识工作者</li>
+<li>风险提示 <span class="label-en">risk_note</span>：模型名称、版本信息和性能表现需以官方资料及实测为准</li>
+<li>适配平台 <span class="label-en">suitable_platforms</span>：小红书、公众号 / 本次通过：小红书、公众号</li>
+<li>原始来源 <span class="label-en">source_urls</span>：<a href="https://openrouter.ai/deepseek/deepseek-v4-pro-0813" target="_blank">打开原文</a></li>
+</ul>
+<h3 id="_3">小红书</h3>
+<p><strong>标题：</strong> DeepSeek新模型，先测这4关🧪</p>
+<p><strong>正文：</strong></p>
+<p>我不想先看排名，先把 DeepSeek 新模型放进真实工作流里测。</p>
+<p>我会问它4类问题：
+1️⃣ 写作：同一份素材，改成邮件、提纲和短文。
+2️⃣ 编程：给一段报错代码，看它能不能定位问题、解释原因。
+3️⃣ 办公：把杂乱信息整理成表格、待办和会议纪要。
+4️⃣ 推理：给出条件、限制和反例，看它会不会只顺着我说。</p>
+<p>我更在意：答案能不能直接用，出错后能不能修，指令变复杂后会不会跑偏。</p>
+<p>排名可以参考，但不如把自己的高频任务丢进去。</p>
+<p>你最想拿哪道题测试它？</p>
+<p>标签：#DeepSeek #大模型测评 #AI效率工具 #国产大模型 #办公效率 #编程工具 #知识工作者</p>
+<h3 id="_4">公众号</h3>
+<p><strong>标题：</strong> 别先看排名，先给新模型这4道题</p>
+<p><strong>正文：</strong></p>
+<p>你刚打开一个新模型，第一件事会做什么？</p>
+<p>看榜单、看参数，还是直接把手头那份难改的材料贴进去？</p>
+<p>对于经常用国产大模型写作、编程和办公的人，我更建议第三种。OpenRouter 页面收录了 DeepSeek V4 Pro 0813 这一模型。至于它到底适不适合你，最有价值的判断，不是停留在名称或排名上，而是把自己的真实任务拆开测试。</p>
+<h3 id="_5">一、先测写作：看它能不能守住边界</h3>
+<p>不要只让模型“写一篇文章”。给它一份你已经掌握的素材，再加上明确限制：保留哪些信息，删掉哪些表达，面向谁，使用什么语气，最后交付什么格式。</p>
+<p>同一份素材可以连续测试三次：先改成文章提纲，再改成内部邮件，最后压缩成一段对外说明。重点不是文风多华丽，而是它有没有遗漏要求、擅自补充信息，或者把原意改掉。</p>
+<p>这类测试适合知识工作者，因为日常写作往往不是“从零创作”，而是整理、改写和准确传达。</p>
+<h3 id="_6">二、再测编程：不要只看它会不会给代码</h3>
+<p>准备一段你能理解的代码，加入一个明确的报错或异常现象。要求模型先复述问题，再指出可能原因，最后给出修改方案，并说明每一处改动的作用。</p>
+<p>随后可以故意追问一个边界条件：如果输入为空怎么办？如果数据量变大怎么办？如果不能引入新依赖怎么办？</p>
+<p>真正值得观察的，是模型能不能沿着问题继续排查，而不是第一轮就输出一大段看起来完整的代码。对实际工作而言，解释、定位和修正同样重要。</p>
+<h3 id="_7">三、办公任务要测“整理能力”</h3>
+<p>把一段混乱的会议记录、项目沟通或工作备忘交给模型，让它整理成待办清单、负责人字段、截止时间字段和风险提示。没有明确的信息，就要求它标记“待确认”，不要自行补齐。</p>
+<p>这一关可以暴露一个常见问题：输出看起来很整齐，但是否把不确定内容说成了确定内容。表格格式漂亮，不代表信息整理准确。</p>
+<h3 id="_8">四、最后做推理与反事实测试</h3>
+<p>给出一组条件，再加入限制、例外和反例。先让模型作答，再修改其中一个条件，观察结论是否随之变化。也可以直接指出它上一轮答案中的疑点，看它能不能重新检查，而不是机械坚持原结论。</p>
+<p>我会把结果分成三档：可以直接使用、需要人工校对、只能当作思路参考。这个分档比一句“它强不强”更接近真实体验，也方便和其他模型使用同一套题目比较。</p>
+<h3 id="_9">建议：建立一份个人测试集</h3>
+<p>从自己的工作中选四个高频任务：一份改写材料、一段代码、一次信息整理、一个带限制条件的问题。保存原始输入和模型输出，再用同样的提示词测试不同模型。</p>
+<p>不要急着替任何模型下结论。先看它能否稳定完成你的任务，再决定它适不适合进入日常工作流。</p>
+<h2 id="3-grok-ai">3. Grok 新版本是否真的改变了 AI 助手竞争格局：从功能到日常体验实测</h2>
+<ul>
+<li>选题角度 <span class="label-en">topic</span>：Grok 新版本是否真的改变了 AI 助手竞争格局：从功能到日常体验实测</li>
+<li>传播抓手 <span class="label-en">why_hot</span>：争议：不同 AI 产品之间的能力、立场和用户体验对比，天然适合形成阵营讨论</li>
+<li>传播潜力 <span class="label-en">spread_score</span>：81</li>
+<li>目标读者 <span class="label-en">target_audience</span>：同时使用 ChatGPT、Grok 等 AI 助手的内容创作者和职场用户</li>
+<li>风险提示 <span class="label-en">risk_note</span>：涉及企业产品评价和性能对比，需基于可复现测试，避免未经证实的排名结论</li>
+<li>适配平台 <span class="label-en">suitable_platforms</span>：小红书、公众号 / 本次通过：小红书</li>
+<li>原始来源 <span class="label-en">source_urls</span>：<a href="https://x.ai/news/grok-4-6" target="_blank">打开原文</a></li>
+</ul>
+<h3 id="_10">小红书</h3>
+<p><strong>标题：</strong> Grok 4.6真能改写格局？🤔</p>
+<p><strong>正文：</strong></p>
+<p>我看完 xAI 的 Grok 4.6 公告，第一反应不是“谁赢了”，而是：AI 助手的差距，真的能靠一次版本更新被拉开吗？</p>
+<p>官方发布信息可以说明它更新了，但不能直接等于我的日常体验变好了。</p>
+<p>我更在意三件事：
+同一条指令，谁更懂我的意图？
+长内容整理时，谁更少跑偏？
+写稿、改稿、查资料时，谁更省返工？</p>
+<p>所以别急着站队。把自己的真实任务分别丢给 ChatGPT 和 Grok，再看结果、耗时和修改次数。</p>
+<p>你更常用哪一个？</p>
+  </main>
+</body>
+</html>

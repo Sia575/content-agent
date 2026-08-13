@@ -1,0 +1,7 @@
+# Copy this file to settings.yaml to customize the MVP configuration.
+# The repository includes a working settings.yaml with public RSS sources.
+app:
+  timezone: Asia/Shanghai
+  daily_run_time: "08:00"
+  output_dir: output
+  max_items_per_section: 8

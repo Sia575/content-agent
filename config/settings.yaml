@@ -1,0 +1,91 @@
+app:
+  timezone: Asia/Shanghai
+  daily_run_time: "08:00"
+  output_dir: output
+  max_items_per_section: 8
+
+llm:
+  enabled: true
+  model: gpt-5.6-luna
+  api_key_env: LLM_API_KEY
+  base_url_env: LLM_BASE_URL
+  base_url: https://api.openai.com/v1
+  timeout_seconds: 60
+  fallback_to_rule_mode: true
+
+collection:
+  lookback_hours: 24
+  request_timeout_seconds: 20
+  rss_sources:
+    - name: The Verge
+      region: international
+      url: https://www.theverge.com/rss/index.xml
+    - name: TechCrunch
+      region: international
+      url: https://techcrunch.com/feed/
+    - name: Google News - China technology
+      region: domestic
+      url: https://news.google.com/rss/search?q=%E7%A7%91%E6%8A%80+OR+AI+OR+%E8%8A%AF%E7%89%87+when:1d&hl=zh-CN&gl=CN&ceid=CN:zh-Hans
+  newsapi:
+    enabled: true
+    endpoint: https://newsapi.org/v2/everything
+    queries:
+      - artificial intelligence OR semiconductor OR cloud computing OR autonomous driving
+
+filtering:
+  topic_keywords:
+    - ai
+    - artificial intelligence
+    - generative ai
+    - machine learning
+    - 人工智能
+    - 大模型
+    - 芯片
+    - 半导体
+    - gpu
+    - nvidia
+    - cloud computing
+    - 云计算
+    - 数据中心
+    - data center
+    - 航天
+    - space
+    - satellite
+    - 卫星
+    - 自动驾驶
+    - autonomous driving
+    - robotaxi
+    - 具身智能
+    - robotics
+    - 加密货币
+    - cryptocurrency
+    - bitcoin
+    - 区块链
+    - 电力
+    - 能源
+    - cooling
+    - 散热
+    - network infrastructure
+    - 网络基础设施
+    - fintech
+    - 金融科技
+    - adtech
+    - 广告科技
+  domestic_keywords:
+    - 中国
+    - 中国大陆
+    - 国内
+    - 北京
+    - 上海
+    - 深圳
+    - 杭州
+    - 香港
+    - 华为
+    - 阿里
+    - 腾讯
+    - 百度
+    - 字节跳动
+    - 小米
+    - 比亚迪
+    - China
+    - Chinese

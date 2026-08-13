@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>内容运营 Agent</title>
+<style>
+:root{--ink:#172033;--muted:#667085;--line:#dbe3ef;--paper:#fff;--wash:#f3f7fb;--accent:#0f6b5f;--soft:#e8f5f1}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:linear-gradient(135deg,#e5f4ef,transparent 36%),linear-gradient(315deg,#eaf1ff,transparent 45%),var(--wash);font-family:"Avenir Next","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75}.container{width:min(1080px,calc(100vw - 32px));margin:32px auto;padding:42px;background:var(--paper);border:1px solid var(--line);border-radius:18px;box-shadow:0 24px 70px #17203318}h1{margin:0 0 8px;font-size:clamp(34px,6vw,58px);line-height:1.15;color:var(--accent)}h2{margin-top:52px;padding-bottom:10px;border-bottom:2px solid var(--line)}h3{margin-top:28px}.subtitle{font-size:20px;color:var(--muted);margin:0}.author{color:var(--accent);font-weight:700;margin-top:12px}.flow-card{padding:18px 22px}.flow-text{margin:0;font-size:18px;font-weight:700;line-height:1.5;color:var(--accent);white-space:nowrap;text-align:center}.flow-notes{margin:14px 0 0;padding-left:1.4em}.flow-notes li{margin:4px 0}.card,.topic{background:#f8fafc;border:1px solid var(--line);border-radius:14px;padding:22px;margin-top:18px}.topic{background:#fbfdfd;border-left:5px solid var(--accent);border-radius:0 14px 14px 0}.topic h3{margin-top:0}.platform{border-top:1px solid var(--line);padding-top:14px;margin-top:18px}.platform h4{color:var(--accent);font-size:19px;margin:0 0 8px}.topic-content{white-space:pre-wrap}.label-en{font-size:.78em;color:var(--muted);font-weight:400}.file{display:block;background:var(--soft);padding:14px 16px;margin-top:10px;border-radius:10px;text-decoration:none;color:var(--accent);font-weight:700}.muted{color:var(--muted)}a{color:var(--accent)}@media(max-width:640px){.container{width:100%;margin:0;padding:24px;border-radius:0}.flow-text{font-size:14px;text-align:left;overflow-x:auto}.flow-card{padding:16px}.flow-notes{padding-left:1.2em}}
+</style>
+</head>
+<body><main class="container">
+<h1>内容运营 Agent</h1>
+<p class="subtitle">从公开热榜发现有传播潜力的选题，完成选题判断、多平台内容生成与人工确认，输出可直接使用的内容包。</p>
+<p class="author">作者：靳思嘉</p>
+
+<h2>1. Agent 工作流程</h2>
+<div class="card flow-card">
+<p class="flow-text">热榜采集 → 选题判断 → 人工选题确认 → 多平台生成 → 人工内容确认 → 输出内容包</p>
+<ul class="flow-notes">
+<li><strong>热榜采集：</strong>收集公开热榜和相关来源，形成候选信息池。</li>
+<li><strong>选题判断：</strong>评估话题热度、传播潜力、目标读者和风险。</li>
+<li><strong>人工选题确认：</strong>由人工筛选并确认最终要制作的选题。</li>
+<li><strong>多平台生成：</strong>根据平台特点生成对应标题和完整正文。</li>
+<li><strong>人工内容确认：</strong>人工检查事实、表达和平台适配性，确认通过或丢弃。</li>
+<li><strong>输出内容包：</strong>汇总确认通过的内容，生成可查看和复用的输出文件。</li>
+</ul>
+</div>
+
+<h2>2. 真实运行案例</h2>
+<article class="topic">
+<h3>选题：DeepSeek 新模型与主流大模型相比，普通用户最该测试哪些能力</h3>
+<p><strong>传播抓手：</strong>争议：模型排名、推理能力和实际体验容易引发不同阵营用户的对比与争论</p>
+<p><strong>传播潜力：</strong>83</p>
+<p><strong>目标读者：</strong>经常使用国产大模型处理写作、编程和办公任务的知识工作者</p>
+<p><strong>风险提示：</strong>模型名称、版本信息和性能表现需以官方资料及实测为准</p>
+<p><strong>适配平台：</strong>小红书、公众号</p>
+<p><strong>原始来源：</strong><a href="https://openrouter.ai/deepseek/deepseek-v4-pro-0813" target="_blank">打开原文</a></p>
+<div class="platform">
+<h4>小红书</h4>
+<p><strong>标题：</strong>DeepSeek新模型，先测这4关🧪</p>
+<p>我不想先看排名，先把 DeepSeek 新模型放进真实工作流里测。</p>
+<p>我会问它4类问题：<br>1️⃣ 写作：同一份素材，改成邮件、提纲和短文。<br>2️⃣ 编程：给一段报错代码，看它能不能定位问题、解释原因。<br>3️⃣ 办公：把杂乱信息整理成表格、待办和会议纪要。<br>4️⃣ 推理：给出条件、限制和反例，看它会不会只顺着我说。</p>
+<p>我更在意：答案能不能直接用，出错后能不能修，指令变复杂后会不会跑偏。</p>
+<p>排名可以参考，但不如把自己的高频任务丢进去。</p>
+<p>你最想拿哪道题测试它？</p>
+</div>
+<div class="platform">
+<h4>公众号</h4>
+<p><strong>标题：</strong>别先看排名，先给新模型这4道题</p>
+<p>你刚打开一个新模型，第一件事会做什么？</p>
+<p>看榜单、看参数，还是直接把手头那份难改的材料贴进去？</p>
+<p>对于经常用国产大模型写作、编程和办公的人，我更建议第三种。OpenRouter 页面收录了 DeepSeek V4 Pro 0813 这一模型。至于它到底适不适合你，最有价值的判断，不是停留在名称或排名上，而是把自己的真实任务拆开测试。</p>
+<p>一、先测写作：看它能不能守住边界</p>
+<p>不要只让模型“写一篇文章”。给它一份你已经掌握的素材，再加上明确限制：保留哪些信息，删掉哪些表达，面向谁，使用什么语气，最后交付什么格式。</p>
+<p>同一份素材可以连续测试三次：先改成文章提纲，再改成内部邮件，最后压缩成一段对外说明。重点不是文风多华丽，而是它有没有遗漏要求、擅自补充信息，或者把原意改掉。</p>
+<p>这类测试适合知识工作者，因为日常写作往往不是“从零创作”，而是整理、改写和准确传达。</p>
+<p>二、再测编程：不要只看它会不会给代码</p>
+<p>准备一段你能理解的代码，加入一个明确的报错或异常现象。要求模型先复述问题，再指出可能原因，最后给出修改方案，并说明每一处改动的作用。</p>
+<p>随后可以故意追问一个边界条件：如果输入为空怎么办？如果数据量变大怎么办？如果不能引入新依赖怎么办？</p>
+<p>真正值得观察的，是模型能不能沿着问题继续排查，而不是第一轮就输出一大段看起来完整的代码。对实际工作而言，解释、定位和修正同样重要。</p>
+<p>三、办公任务要测“整理能力”</p>
+<p>把一段混乱的会议记录、项目沟通或工作备忘交给模型，让它整理成待办清单、负责人字段、截止时间字段和风险提示。没有明确的信息，就要求它标记“待确认”，不要自行补齐。</p>
+<p>这一关可以暴露一个常见问题：输出看起来很整齐，但是否把不确定内容说成了确定内容。表格格式漂亮，不代表信息整理准确。</p>
+<p>四、最后做推理与反事实测试</p>
+<p>给出一组条件，再加入限制、例外和反例。先让模型作答，再修改其中一个条件，观察结论是否随之变化。也可以直接指出它上一轮答案中的疑点，看它能不能重新检查，而不是机械坚持原结论。</p>
+<p>我会把结果分成三档：可以直接使用、需要人工校对、只能当作思路参考。这个分档比一句“它强不强”更接近真实体验，也方便和其他模型使用同一套题目比较。</p>
+<p>建议：建立一份个人测试集</p>
+<p>从自己的工作中选四个高频任务：一份改写材料、一段代码、一次信息整理、一个带限制条件的问题。保存原始输入和模型输出，再用同样的提示词测试不同模型。</p>
+<p>不要急着替任何模型下结论。先看它能否稳定完成你的任务，再决定它适不适合进入日常工作流。</p>
+</div>
+</article>
+
+<h2>3. 实际输出文件</h2>
+<div class="card"><a class="file" href="output/latest-workbench.html" target="_blank">查看内容工作台 (latest-workbench.html)</a><a class="file" href="output/latest-content.json" target="_blank">查看结构化输出 (latest-content.json)</a></div>
+
+<h2>4. 当前局限</h2>
+<div class="card"><p>当前输出仍需人工核实事实，尤其是趋势判断、数字、因果关系和风险表述；目前没有接入平台发布 API，结果以内容包文件交付。</p></div>
+</main>
